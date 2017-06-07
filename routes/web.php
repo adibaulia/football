@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('layouts/master');
+    return view('home');
+});
+
+Route::get('/login', function () {
+    return view('login/dashboard');
 });
