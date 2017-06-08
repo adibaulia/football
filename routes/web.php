@@ -1,4 +1,4 @@
-<?php
+a<?php
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +13,10 @@
 
 Route::get('/', function () {
     return view('home');
+});
+
+Route::get('/mainmenu', function () {
+    return view('mainmenu/index');
 });
 
 Route::get('/login', function () {
