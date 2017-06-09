@@ -1,11 +1,13 @@
-@extends('layouts.app')
-
-@section('content')
+@extends('layouts.noNav')
+@section('title')
+  Login
+@endsection
+@section('headerwrap')
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Login</div>
+                <div class="panel-heading">Login Admin</div>
                 <div class="panel-body">
                     <form class="form-horizontal" role="form" method="POST" action="{{ route('login.admin') }}">
                         {{ csrf_field() }}
