@@ -206,7 +206,7 @@ a:focus {
 
 #headerwrap {
 	background-color: #00b3fe;
-	min-height: 550px;
+	min-height: 523px;
 	padding-top: 100px;
 	padding-bottom: 0px;
 	text-align: center;
@@ -334,8 +334,8 @@ a:focus {
 
 /* Footer */
 #footerwrap {
-	padding-top: 20px;
-	padding-bottom: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	background: #384452;
 }
 
