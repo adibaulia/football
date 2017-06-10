@@ -19,6 +19,7 @@ class LoginController extends Controller
 
     if (count($checkLogin) > 0) {
       echo "Login Sukses";
+      return view('home');
     }
     else {
       echo "Login Gagal";
