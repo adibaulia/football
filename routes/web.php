@@ -11,6 +11,20 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'LandingPage@index');
+Route::get('/home', function(){
+  return redirect('/dashboard');
+});
+Route::get('/dashboard', 'Dashboard@index');
+
+
+Route::get('/register', 'RegisterController@getRegister');
+
+Route::post('/postRegister', 'RegisterController@postRegister');
+
+Route::get('/login', 'LoginController@getLogin')->name('login');
+Route::post('/checkLogin', 'LoginController@checkLogin');
+Route::get('/logout', function(){
+  Auth::logout();
+  return redirect('/');
 });

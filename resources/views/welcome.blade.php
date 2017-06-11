@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="{{ config('app.locale') }}">
+<html lang="{{ app()->getLocale() }}">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -76,10 +77,10 @@
                     @endif
                 </div>
             @endif
-            
+
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Nyoba
                 </div>
 
                 <div class="links">
