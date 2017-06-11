@@ -7,7 +7,7 @@
 <div class="container">
     <div class="row">
 
-        <div class="col-lg-4">
+        <div class="col-lg-8 col-lg-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading">Register Admin</div>
                 <div class="panel-body">

@@ -7,6 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
     <title>@yield('title')</title>
 
@@ -79,6 +80,7 @@
   	<script src="{{ asset('js/jquery.isotope.min.js') }}"></script>
   	<script src="{{ asset('js/custom.js') }}"></script>
     <script src="//code.jquery.com/jquery.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 <script>
     $('#flash-overlay-modal').modal();

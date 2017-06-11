@@ -34,7 +34,7 @@ class LoginController extends Controller
         'username' => $request->username,
         'password' => $request->password
        ])){
-         flash()->overlay('Sukses Login');
+         flash('notif', 'Succes');
          return redirect('login');
        }else{
          flash()->overlay('Login Gagal');

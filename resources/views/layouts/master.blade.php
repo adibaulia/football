@@ -17,7 +17,7 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
     <script src="{{ asset('js/modernizr') }}"></script>
-  
+
   </head>
 
   <body>
@@ -47,6 +47,7 @@
 	 ***************************************************************************************************************** -->
 	<div id="headerwrap">
 	    <div class="container">
+        @include('flash::message')
 			<div class="row">
 
 					@yield('headerwrap')

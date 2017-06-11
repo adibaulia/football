@@ -24,10 +24,15 @@ class RegisterController extends Controller
       $user = new User();
       $user->username = Input::get('username');
       $user->password = bcrypt(Input::get('password'));
-      
+      $result = User::where('username', '=' ,$user->username)->get();
+      if(!$result)
+      {
+        $user->save();
+        return redirect('/');
+      } else {
+        return redirect('/');
+      }
 
-      $user->save();
-      return redirect('/');
 
     }
 }
