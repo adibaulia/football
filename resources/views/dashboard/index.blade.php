@@ -5,6 +5,7 @@
 @section('headerwrap')
   <br><br><br>
   <div class="container">
+     @include('flash::message')
     <div class="row centered">
       <div class="col-md-4 col-md-offset-2">
         <i class="fa fa-sign-in" style="font-size:100px"></i>

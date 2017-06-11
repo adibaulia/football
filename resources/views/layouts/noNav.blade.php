@@ -78,6 +78,11 @@
 	<script src="{{ asset('js/jquery.prettyPhoto.js') }}"></script>
   	<script src="{{ asset('js/jquery.isotope.min.js') }}"></script>
   	<script src="{{ asset('js/custom.js') }}"></script>
+    <script src="//code.jquery.com/jquery.js"></script>
+
+<script>
+    $('#flash-overlay-modal').modal();
+</script>
 
 
     <script>

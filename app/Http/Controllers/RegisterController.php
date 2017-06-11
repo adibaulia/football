@@ -13,7 +13,7 @@ class RegisterController extends Controller
     {
       $this->middleware('guest');
     }
-    
+
     public function getRegister()
     {
       return view('Register.formRegist');
@@ -25,6 +25,7 @@ class RegisterController extends Controller
       $user->username = Input::get('username');
       $user->password = bcrypt(Input::get('password'));
       $user->save();
+      return redirect('/');
 
     }
 }
