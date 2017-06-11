@@ -1,9 +1,6 @@
-@extends('layouts.noNav')
+@extends('layouts.master')
 @section('title')
-  Landing Page
-@endsection
-@section('navbar')
-  <li><a href="/register">Register Admin</a></li>  
+  Dashboard Admin
 @endsection
 @section('headerwrap')
   <br><br><br>
@@ -11,13 +8,15 @@
     <div class="row centered">
       <div class="col-md-4 col-md-offset-2">
         <i class="fa fa-sign-in" style="font-size:100px"></i>
+
             <div class="top-right links">
-                    <p><br><a href="{{ url('/login') }}" class="btn btn-theme">Login</a></p>
+                    <p><br><a href="{{ url('/login') }}" class="btn btn-theme">Insert Pertandingan</a></p>
             </div>
+
       </div>
       <div class="col-md-4">
         <i class="fa fa-flask" style="font-size:100px"></i>
-        <p><br/><a href="#" class="btn btn-theme">List Pertandingan</a></p>
+        <p><br/><a href="#" class="btn btn-theme">Insert Team</a></p>
       </div>
     </div>
   </div><! --/container -->
