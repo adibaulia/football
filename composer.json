@@ -9,7 +9,10 @@
         "filp/whoops": "^2.1",
         "laracasts/flash": "^3.0",
         "laravel/framework": "5.4.*",
-        "laravel/tinker": "~1.0"
+        "laravel/tinker": "~1.0",
+        "symfony/finder": "^3.3",
+        "symfony/symfony": "^3.3",
+        "symfony/var-dumper": "^3.3"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
