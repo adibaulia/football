@@ -25,6 +25,11 @@
     <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
+        @if (Session::has('flash_message'))
+          <div class="alert alert-success">
+            {{Session::get('flash_message')}}
+          </div>
+        @endif
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>

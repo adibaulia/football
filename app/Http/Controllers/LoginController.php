@@ -34,12 +34,12 @@ class LoginController extends Controller
         'username' => $request->username,
         'password' => $request->password
        ])){
-         //flash('notif', 'Succes');
-         return redirect('login');
+         flash()->overlay('Berhasil Login');
+         return redirect('dashboard');
        }else{
-         //flash()->overlay('Login Gagal');
-         Auth::logout();
-         return redirect('/');
+         flash()->overlay('Username / password anda salah');
+         //Auth::logout();
+         return redirect('login');
        }
     }
 }

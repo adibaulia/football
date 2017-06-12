@@ -29,18 +29,8 @@ class RegisterController extends Controller
       $user->username = $request->username;
       $user->password = bcrypt(Input::get('password'));
 
-
-      if(null!=$errors->has('username')){
-        return redirect( '/register');
-      }else{
-        $user->save();
-        return redirect( '/');
-      }
-      // $result = User::where('username', '=' , $username->username)->get();
-
-
-
-
+      $user->save();
+      return redirect('login');
     }
 
 }

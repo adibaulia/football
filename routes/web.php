@@ -17,7 +17,6 @@ Route::get('/home', function(){
 });
 Route::get('/dashboard', 'Dashboard@index');
 
-
 Route::get('/register', 'RegisterController@getRegister');
 
 Route::post('/postRegister', 'RegisterController@postRegister');

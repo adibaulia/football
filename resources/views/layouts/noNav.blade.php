@@ -7,7 +7,6 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
     <title>@yield('title')</title>
 
@@ -25,6 +24,11 @@
     <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
+        @if (Session::has('flash_message'))
+          <div class="alert">
+            {{ Session::get('flash_message') }}
+          </div>
+        @endif
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -47,6 +51,7 @@
 	 ***************************************************************************************************************** -->
 	<div id="headerwrap">
 	    <div class="container">
+        @include('flash::message')
 			<div class="row">
 
 					@yield('headerwrap')
@@ -80,12 +85,11 @@
   	<script src="{{ asset('js/jquery.isotope.min.js') }}"></script>
   	<script src="{{ asset('js/custom.js') }}"></script>
     <script src="//code.jquery.com/jquery.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-<script>
-    $('#flash-overlay-modal').modal();
-</script>
-
+    <script>
+        $('#flash-overlay-modal').modal();
+    </script>
 
     <script>
 // Portfolio
