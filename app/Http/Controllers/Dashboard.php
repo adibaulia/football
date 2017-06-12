@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Club;
+use App\Pertandingan;
 use App\Http\Middleware;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
@@ -31,15 +32,24 @@ class Dashboard extends Controller
     }
 
     public function addTeam(){
-      $this->validate($request, [
-        'idteam'  => 'unique:club,idteam'
-      ]);
+
 
       $team = new Club();
       $team->nama_club = Input::get('namateam');
-      $team->id_club = Input::get('idteam');
       $team->save();
       return redirect('/insertTeam');
 
     }
+
+    public function addPertandingan(){
+
+
+      $pertandingan = new Pertandingan();
+      $pertandingan->nama_pertandingan = Input::get('pertandingan');
+      $pertandingan->nama_stadion = Input::get('stadion');
+      $pertandingan->tanggal_pertandingan = Input::get('tanggal');
+      $pertandingan->save();
+      return redirect('/pilihTeam');
+    }
+    
 }

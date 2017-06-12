@@ -29,5 +29,8 @@ Route::get('/logout', function(){
 });
 
 Route::get('/insertPertandingan', 'Dashboard@insertPertandingan');
+Route::post('/addPertandingan', 'Dashboard@addPertandingan');
 Route::get('/insertTeam', 'Dashboard@insertTeam');
 Route::post('/addTeam', 'Dashboard@addTeam');
+
+Route::get('/pilihTeam', 'PilihTeamController@getTeam');

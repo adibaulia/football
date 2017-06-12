@@ -27,17 +27,7 @@
                                 @endif
                             </div>
                         </div>
-
-                        <div class="form-group{{ $errors->has('username') ? ' has-error' : '' }}">
-                            <label for="team" class="col-md-4 control-label">ID Team</label>
-
-                            <div class="col-md-6">
-                                <input id="team" type="number" class="form-control" name="idteam" required autofocus>
-
-                            </div>
-                        </div>
-
-
+                        
                         <div class="form-group">
                             <div class="col-md-5 col-md-offset-6">
                                 <button type="submit" class="btn btn-primary">
