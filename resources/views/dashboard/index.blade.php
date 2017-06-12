@@ -11,7 +11,7 @@
         <i class="fa fa-sign-in" style="font-size:100px"></i>
 
             <div class="top-right links">
-                    <p><br><a href="{{ url('/login') }}" class="btn btn-theme">Insert Pertandingan</a></p>
+                    <p><br><a href="/insertPertandingan" class="btn btn-theme">Insert Pertandingan</a></p>
             </div>
 
       </div>
