@@ -17,7 +17,7 @@
       </div>
       <div class="col-md-4">
         <i class="fa fa-flask" style="font-size:100px"></i>
-        <p><br/><a href="#" class="btn btn-theme">Insert Team</a></p>
+        <p><br/><a href="/insertTeam" class="btn btn-theme">Insert Team</a></p>
       </div>
     </div>
   </div><! --/container -->

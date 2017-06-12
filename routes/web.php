@@ -28,3 +28,7 @@ Route::get('/logout', function(){
   Auth::logout();
   return redirect('/');
 });
+
+Route::get('/insertPertandingan', 'Dashboard@insertPertandingan');
+Route::get('/insertTeam', 'Dashboard@insertTeam');
+Route::post('/addTeam', 'Dashboard@addTeam');

@@ -3,7 +3,7 @@
   Landing Page
 @endsection
 @section('navbar')
-  <li><a href="/register">Register Admin</a></li>  
+  <li><a href="/register">Register Admin</a></li>
 @endsection
 @section('headerwrap')
   <br><br><br>
@@ -17,7 +17,7 @@
       </div>
       <div class="col-md-4">
         <i class="fa fa-flask" style="font-size:100px"></i>
-        <p><br/><a href="#" class="btn btn-theme">List Pertandingan</a></p>
+        <p><br/><a href="/listPertandingan" class="btn btn-theme">List Pertandingan</a></p>
       </div>
     </div>
   </div><! --/container -->

@@ -74,6 +74,7 @@
 	 	<div class="container">
 		 	<div class="row">
 
+        <p>WIMP IMK</p>
 
 		 	</div><! --/row -->
 	 	</div><! --/container -->

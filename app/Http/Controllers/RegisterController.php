@@ -19,20 +19,28 @@ class RegisterController extends Controller
       return view('Register.formRegist');
     }
 
-    public function postRegister()
+    public function postRegister(Request $request)
     {
+      $this->validate($request, [
+        'username'  => 'unique:users,username'
+      ]);
+
       $user = new User();
-      $user->username = Input::get('username');
+      $user->username = $request->username;
       $user->password = bcrypt(Input::get('password'));
-      $result = User::where('username', '=' ,$user->username)->get();
-      if(!$result)
-      {
+
+
+      if(null!=$errors->has('username')){
+        return redirect( '/register');
+      }else{
         $user->save();
-        return redirect('/');
-      } else {
-        return redirect('/');
+        return redirect( '/');
       }
+      // $result = User::where('username', '=' , $username->username)->get();
+
+
 
 
     }
+
 }
