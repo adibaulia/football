@@ -34,3 +34,4 @@ Route::get('/insertTeam', 'Dashboard@insertTeam');
 Route::post('/addTeam', 'Dashboard@addTeam');
 
 Route::get('/pilihTeam', 'PilihTeamController@getTeam');
+Route::post('/addPilihTeam', 'PilihTeamController@addPilihTeam');

@@ -9,22 +9,30 @@
 
         <div class="col-lg-6 col-lg-offset-3">
             <div class="panel panel-default">
-                <div class="panel-heading">Team 1</div>
+                <div class="panel-heading">Pertandingan</div>
                 <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="/addPertandingan">
+                    <form class="form-horizontal" role="form" method="POST" action="/addPilihTeam">
                         {{ csrf_field() }}
 
                         <div class="form-group">
                             <label class="col-md-4 control-label">Team Home</label>
                             <div class="col-md-6">
-                                <input  type="text" class="form-control" name="team1" value="" required autofocus>
+                              <select name="teamhome" class="form-control">
+                                  @foreach($pilihTeam as $team)
+                                  <option value= {{$team->ID_CLUB}} > {{$team->NAMA_CLUB}} </option>
+                                      @endforeach
+                                  </select>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label class="col-md-4 control-label">Team Away</label>
                             <div class="col-md-6">
-                                <input  type="text" class="form-control" name="team2" value="" required autofocus>
+                              <select name="teamaway" class="form-control">
+                                  @foreach ($pilihTeam as $team)
+                                    <option value={{$team->ID_CLUB}}> {{$team->NAMA_CLUB}}</option>
+                                  @endforeach
+                              </select>
                             </div>
                         </div>
 

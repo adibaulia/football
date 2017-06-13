@@ -20,14 +20,20 @@
                             <div class="col-md-6">
                                 <input id="username" type="text" class="form-control" name="namateam" required autofocus>
 
-                                @if ($errors->has('username'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('username') }}</strong>
-                                    </span>
-                                @endif
                             </div>
                         </div>
-                        
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Formasi</label>
+                            <div class="col-md-6">
+                              <select name="formasi" class="form-control">
+                                  @foreach($formasi as $formasi1)
+                                  <option value= {{$formasi1->ID_FORMASI}} > {{$formasi1->BELAKANG}} - {{$formasi1->TENGAH}} - {{$formasi1->DEPAN}} </option>
+                                      @endforeach
+                                  </select>
+                            </div>
+                        </div>
+
                         <div class="form-group">
                             <div class="col-md-5 col-md-offset-6">
                                 <button type="submit" class="btn btn-primary">
