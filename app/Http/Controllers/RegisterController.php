@@ -28,8 +28,8 @@ class RegisterController extends Controller
       $user = new User();
       $user->username = $request->username;
       $user->password = bcrypt(Input::get('password'));
-
       $user->save();
+      flash()->overlay('Berhasil Mendaftar! Silahkan Login');
       return redirect('login');
     }
 

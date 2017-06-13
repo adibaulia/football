@@ -18,7 +18,7 @@
                             <label for="username" class="col-md-4 control-label">Nama Team</label>
 
                             <div class="col-md-6">
-                                <input id="username" type="text" class="form-control" name="namateam" required autofocus>
+                                <input type="text" class="form-control" name="namateam" required autofocus>
 
                             </div>
                         </div>

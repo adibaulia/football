@@ -41,7 +41,8 @@
         </div>
         <div class="navbar-collapse collapse navbar-right">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="/logout">Logout</a></li>
+            <li ><a href="/Dashboard">DASHBOARD</a></li>
+            <li><a href="/logout">LOGOUT</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>

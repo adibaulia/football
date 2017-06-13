@@ -12,11 +12,13 @@ use Illuminate\Support\Facades\DB;
 
 class PilihTeamController extends Controller
 {
+
+
   public function __construct()
   {
       $this->middleware('auth');
   }
-  
+
   public function getTeam()
   {
     $pilihTeam=Club::all();
@@ -37,7 +39,16 @@ class PilihTeamController extends Controller
     $away->pertandingan_ID_PERTANDINGAN= $pertandingan;
     $away->save();
 
+    $club1=Club::where('ID_CLUB',$home->club_ID_CLUB)->first();
+    $club2=Club::where('ID_CLUB',$away->club_ID_CLUB)->first();
+
+    \Session::flash('home', $club1);
+    \Session::flash('away', $club2);
+    \Session::flash('pertandingan',$pertandingan);
     flash()->overlay('Berhasil Menambahkan Team!');
-    return redirect('/pilihTeam');
+    return redirect('/inputStatistik');
   }
+
+
+
 }
