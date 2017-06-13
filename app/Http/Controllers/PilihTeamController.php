@@ -12,8 +12,6 @@ use Illuminate\Support\Facades\DB;
 
 class PilihTeamController extends Controller
 {
-
-
   public function __construct()
   {
       $this->middleware('auth');

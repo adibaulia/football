@@ -28,4 +28,7 @@ Route::post('/addPilihTeam', 'PilihTeamController@addPilihTeam');
 Route::get('/inputStatistik', 'StatistikController@inputStatistik');
 Route::post('/addStatistik', 'StatistikController@addStatistik');
 
-Route::get('/listPertandingan', 'Pertandingan@list');
+Route::get('/listPertandingan', 'ListPertandingan@index');
+Route::get('/listPertandingan/{id}', 'ListPertandingan@show');
+
+Route::get('/team/{team}', 'ListPertandingan@team');

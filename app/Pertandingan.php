@@ -9,4 +9,7 @@ class Pertandingan extends Model
   protected $table = 'pertandingan';
   public $timestamps = false;
   protected $guarded = ['id'];
+
+
+
 }

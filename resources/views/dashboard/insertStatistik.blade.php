@@ -14,67 +14,67 @@
             <div class="form-group">
               <label class="col-md-4 control-label">Score</label>
               <div class="col-md-6">
-                <input type="number" class="form-control" name="score1"   autofocus>
+                <input type="number" class="form-control" name="score1"  required autofocus>
               </div>
             </div>
             <div class="form-group">
               <label class="col-md-4 control-label">Possesion</label>
               <div class="col-md-6">
-                <input type="number" class="form-control" name="posession1"   autofocus>
+                <input type="number" class="form-control" name="possesion1"  required autofocus>
               </div>
             </div>
             <div class="form-group">
               <label class="col-md-4 control-label">Tembakan ke gawang</label>
               <div class="col-md-6">
-                <input type="number" class="form-control" name="shot1"   autofocus>
+                <input type="number" class="form-control" name="shot1" required  autofocus>
               </div>
             </div>
             <div class="form-group">
               <label class="col-md-4 control-label">Pelanggaran</label>
               <div class="col-md-6">
-                <input type="number" class="form-control" name="foul1"   autofocus>
+                <input type="number" class="form-control" name="foul1"  required autofocus>
               </div>
             </div>
             <div class="form-group">
               <label class="col-md-4 control-label">Tendangan Sudut</label>
               <div class="col-md-6">
-                <input type="number" class="form-control" name="corner1"   autofocus>
+                <input type="number" class="form-control" name="corner1"  required autofocus>
               </div>
             </div>
             <div class="form-group">
               <label class="col-md-4 control-label">Tendangan Bebas</label>
               <div class="col-md-6">
-                <input type="number" class="form-control" name="freekick1"   autofocus>
+                <input type="number" class="form-control" name="freekick1" required  autofocus>
               </div>
             </div>
             <div class="form-group">
               <label class="col-md-4 control-label">Akurasi Umpan</label>
               <div class="col-md-6">
-                <input type="number" class="form-control" name="pass1"   autofocus>
+                <input type="number" class="form-control" name="pass1" required  autofocus>
               </div>
             </div>
             <div class="form-group">
               <label class="col-md-4 control-label">Umpan Silang</label>
               <div class="col-md-6">
-                <input type="number" class="form-control" name="cross1"   autofocus>
+                <input type="number" class="form-control" name="cross1" required  autofocus>
               </div>
             </div>
             <div class="form-group">
               <label class="col-md-4 control-label">Interception</label>
               <div class="col-md-6">
-                <input type="number" class="form-control" name="interception1"   autofocus>
+                <input type="number" class="form-control" name="interception1"  required autofocus>
               </div>
             </div>
             <div class="form-group">
               <label class="col-md-4 control-label">Tackle</label>
               <div class="col-md-6">
-                <input type="number" class="form-control" name="tackle1"   autofocus>
+                <input type="number" class="form-control" name="tackle1" required  autofocus>
               </div>
             </div>
             <div class="form-group">
               <label class="col-md-4 control-label">Penyelamatan Gawang</label>
               <div class="col-md-6">
-                <input type="number" class="form-control" name="save1"   autofocus>
+                <input type="number" class="form-control" name="save1" required  autofocus>
               </div>
             </div>
         </div>
@@ -87,61 +87,61 @@
             <div class="form-group">
               <label class="col-md-4 control-label">Score</label>
               <div class="col-md-6">
-                <input type="number" class="form-control" name="score2"   autofocus>
+                <input type="number" class="form-control" name="score2" required  autofocus>
               </div>
             </div>
             <div class="form-group">
               <label class="col-md-4 control-label">Possesion</label>
               <div class="col-md-6">
-                <input type="number" class="form-control" name="posession2"   autofocus>
+                <input type="number" class="form-control" name="possesion2"  required autofocus>
               </div>
             </div>
             <div class="form-group">
               <label class="col-md-4 control-label">Tembakan ke gawang</label>
               <div class="col-md-6">
-                <input type="number" class="form-control" name="shot2"   autofocus>
+                <input type="number" class="form-control" name="shot2" required  autofocus>
               </div>
             </div>
             <div class="form-group">
               <label class="col-md-4 control-label">Pelanggaran</label>
               <div class="col-md-6">
-                <input type="number" class="form-control" name="foul2"   autofocus>
+                <input type="number" class="form-control" name="foul2" required  autofocus>
               </div>
             </div>
             <div class="form-group">
               <label class="col-md-4 control-label">Tendangan Sudut</label>
               <div class="col-md-6">
-                <input type="number" class="form-control" name="corner2"   autofocus>
+                <input type="number" class="form-control" name="corner2" required  autofocus>
               </div>
             </div>
             <div class="form-group">
               <label class="col-md-4 control-label">Tendangan Bebas</label>
               <div class="col-md-6">
-                <input type="number" class="form-control" name="freekick2"   autofocus>
+                <input type="number" class="form-control" name="freekick2" required  autofocus>
               </div>
             </div>
             <div class="form-group">
               <label class="col-md-4 control-label">Akurasi Umpan</label>
               <div class="col-md-6">
-                <input type="number" class="form-control" name="pass2"   autofocus>
+                <input type="number" class="form-control" name="pass2" required   autofocus>
               </div>
             </div>
             <div class="form-group">
               <label class="col-md-4 control-label">Umpan Silang</label>
               <div class="col-md-6">
-                <input type="number" class="form-control" name="cross2"   autofocus>
+                <input type="number" class="form-control" name="cross2" required  autofocus>
               </div>
             </div>
             <div class="form-group">
               <label class="col-md-4 control-label">Interception</label>
               <div class="col-md-6">
-                <input type="number" class="form-control" name="interception2"   autofocus>
+                <input type="number" class="form-control" name="interception2" required  autofocus>
               </div>
             </div>
             <div class="form-group">
               <label class="col-md-4 control-label">Tackle</label>
               <div class="col-md-6">
-                <input type="number" class="form-control" name="tackle2"   autofocus>
+                <input type="number" class="form-control" name="tackle2" required  autofocus>
               </div>
             </div>
             <div class="form-group">
